@@ -1,0 +1,21 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('fetch') {
+            steps {
+                echo 'fetching files from github'
+            }
+        }
+stage('install') {
+            steps {
+                echo 'installing apache2'
+            }
+        }
+stage('deploy') {
+            steps {
+                echo 'deploying code'
+            }
+        }
+    }
+}
